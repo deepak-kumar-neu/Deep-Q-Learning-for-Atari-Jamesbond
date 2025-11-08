@@ -290,7 +290,6 @@ exploration:
 ### Main Documents
 
 - **[REPORT.md](REPORT.md)**: Comprehensive technical report with all experiments
-- **[CODE_ATTRIBUTION.md](CODE_ATTRIBUTION.md)**: Detailed code sources
 - **[DOCUMENTATION.pdf](DOCUMENTATION.pdf)**: LaTeX-generated guide
 
 ### Interactive Analysis
@@ -314,7 +313,6 @@ Jupyter notebook available in `notebooks/JamesBond_DQN_Complete_Analysis.ipynb`
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-See [CODE_ATTRIBUTION.md](CODE_ATTRIBUTION.md) for complete attribution details.
 
 ---
 
