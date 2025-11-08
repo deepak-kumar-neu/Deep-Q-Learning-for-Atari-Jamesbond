@@ -289,8 +289,8 @@ exploration:
 
 ### Main Documents
 
-- **[REPORT.md](REPORT.md)**: Comprehensive technical report with all experiments
-- **[DOCUMENTATION.pdf](DOCUMENTATION.pdf)**: LaTeX-generated guide
+- **[docs/REPORT.md](REPORT.md)**: Comprehensive technical report with all experiments
+- **[docs/DOCUMENTATION.pdf](DOCUMENTATION.pdf)**
 
 ### Interactive Analysis
 
