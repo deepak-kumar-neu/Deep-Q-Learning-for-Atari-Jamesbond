@@ -1,0 +1,10 @@
+{
+    "config_name": "baseline",
+    "total_episodes": 2000,
+    "mean_reward": 14.875,
+    "std_reward": 27.613119617312346,
+    "max_reward": 150.0,
+    "min_reward": 0.0,
+    "mean_episode_length": 158.8645,
+    "final_epsilon": 0.01
+}

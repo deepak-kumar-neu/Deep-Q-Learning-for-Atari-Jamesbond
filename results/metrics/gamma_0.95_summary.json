@@ -1,0 +1,10 @@
+{
+    "config_name": "gamma_0.95",
+    "total_episodes": 2000,
+    "mean_reward": 60.175,
+    "std_reward": 142.89058532667573,
+    "max_reward": 5500.0,
+    "min_reward": 0.0,
+    "mean_episode_length": 167.6565,
+    "final_epsilon": 0.01
+}

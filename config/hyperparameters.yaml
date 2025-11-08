@@ -1,0 +1,76 @@
+# Hyperparameters for DQN Training on ALE/Jamesbond-v5
+# These parameters are optimized for MacBook Pro training
+
+# Environment Settings
+environment:
+  name: "ALE/Jamesbond-v5"
+  render_mode: null  # Set to "rgb_array" for video recording, null for faster training
+  
+# Training Parameters
+training:
+  total_episodes: 5000  # Reduced for Mac (original: 5000)
+  max_steps_per_episode: 10000  # Maximum steps per episode
+  batch_size: 32  # Minibatch size for training
+  memory_size: 50000  # Replay buffer size (reduced for Mac)
+  learning_starts: 10000  # Steps before training starts
+  train_frequency: 4  # Train every N steps
+  target_update_frequency: 1000  # Update target network every N steps
+  
+# Network Parameters
+network:
+  learning_rate: 0.00025  # Adam optimizer learning rate (alpha in Bellman equation)
+  gamma: 0.99  # Discount factor for future rewards
+  
+# Exploration Parameters
+exploration:
+  strategy: "epsilon_greedy"  # Options: epsilon_greedy, boltzmann, ucb
+  epsilon_start: 1.0  # Initial exploration rate
+  epsilon_end: 0.01  # Final exploration rate
+  epsilon_decay_steps: 100000  # Steps to decay from start to end
+  epsilon_decay_type: "exponential"  # Options: linear, exponential
+  
+  # For Boltzmann exploration
+  temperature_start: 1.0
+  temperature_end: 0.1
+  temperature_decay_steps: 100000
+  
+# Preprocessing Parameters
+preprocessing:
+  frame_skip: 4  # Repeat action for N frames
+  frame_width: 84  # Resize width
+  frame_height: 84  # Resize height
+  frame_stack: 4  # Stack N consecutive frames
+  grayscale: true  # Convert to grayscale
+  normalize: true  # Normalize pixel values to [0, 1]
+  
+# Checkpointing
+checkpointing:
+  save_frequency: 100  # Save model every N episodes
+  keep_best: true  # Keep best performing model
+  checkpoint_dir: "models/checkpoints"
+  
+# Video Recording
+video:
+  record_frequency: 100  # Record video every N episodes
+  video_dir: "videos/gameplay"
+  record_during_training: true
+  
+# Logging
+logging:
+  log_frequency: 10  # Log metrics every N episodes
+  tensorboard_dir: "logs/tensorboard"
+  save_plots: true
+  plot_dir: "results/plots"
+  
+# Testing
+testing:
+  num_test_episodes: 100  # Number of episodes for evaluation
+  test_frequency: 100  # Test every N training episodes
+  deterministic: true  # Use greedy policy (epsilon=0) during testing
+  
+# Device
+device: "mps"  # Options: cpu, cuda, mps (for Mac M1/M2)
+# Use "cpu" if mps is not available
+
+# Random Seed
+seed: 42  # For reproducibility

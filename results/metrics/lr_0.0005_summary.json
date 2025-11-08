@@ -1,0 +1,10 @@
+{
+    "config_name": "lr_0.0005",
+    "total_episodes": 2000,
+    "mean_reward": 11.875,
+    "std_reward": 25.00468706062925,
+    "max_reward": 150.0,
+    "min_reward": 0.0,
+    "mean_episode_length": 161.4055,
+    "final_epsilon": 0.01
+}

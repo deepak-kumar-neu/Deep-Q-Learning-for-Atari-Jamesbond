@@ -1,0 +1,10 @@
+{
+    "config_name": "quick_test",
+    "total_episodes": 100,
+    "mean_reward": 34.0,
+    "std_reward": 42.35563716909474,
+    "max_reward": 150.0,
+    "min_reward": 0.0,
+    "mean_episode_length": 143.27,
+    "final_epsilon": 0.5169636416648802
+}
