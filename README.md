@@ -191,8 +191,9 @@ Training on **2,000 episodes** (~35 minutes on M1 MacBook Pro):
 ## 🏗️ Project Structure
 
 ```
-AtariGames/
+Deep-Q-Learning-for-Atari-Jamesbond/
 ├── src/                          # Source code
+│   ├── __init__.py               # Package initialization
 │   ├── network.py                # CNN architecture
 │   ├── dqn_agent.py              # DQN agent implementation
 │   ├── replay_buffer.py          # Experience replay
@@ -205,24 +206,41 @@ AtariGames/
 │
 ├── config/                       # Configuration files
 │   ├── hyperparameters.yaml      # Base configuration
-│   └── experiments/              # Experiment configs
+│   └── experiments/              # Experiment-specific configs
+│       ├── baseline.yaml
+│       ├── boltzmann.yaml
+│       ├── gamma_0.95.yaml
+│       ├── gamma_0.999.yaml
+│       ├── linear_decay.yaml
+│       ├── lr_0.0001.yaml
+│       ├── lr_0.0005.yaml
+│       └── quick_test.yaml
 │
-├── models/experiments/           # Trained models
-├── results/                      # Results and analysis
-├── videos/gameplay/              # Recorded gameplay
-├── logs/                         # Training logs
-├── notebooks/                    # Jupyter notebooks
+├── models/                       # Model storage
+│   └── best_checkpoints/         # Best performing models
+│       ├── baseline_best.pth
+│       ├── boltzmann_best.pth
+│       ├── gamma_0.95_best.pth
+│       ├── gamma_0.999_best.pth
+│       ├── lr_0.0001_best.pth
+│       └── lr_0.0005_best.pth
 │
-├── run.sh                        # Training launcher
-├── run_all_experiments.sh        # Batch experiment runner
-├── monitor.sh                    # Training monitor
-├── check_status.sh               # Status checker
-├── record_videos.py              # Video recording
+├── results/                      # Experiment results
+│   ├── metrics/                  # Training metrics and summaries
+│   └── plots/                    # Generated visualizations
+│
+├── videos/                       # Gameplay recordings
+│   └── gameplay/                 # Agent gameplay videos
+│
+├── docs/                         # Documentation
+│   ├── Final Report.pdf          # Complete project report
+│   └── REPORT.md                 # Technical analysis
+│
+├── run.sh                        # Training launcher script
+├── record_videos.py              # Video recording utility
 ├── verify_setup.py               # Setup verification
 ├── requirements.txt              # Python dependencies
-├── README.md                     # This file
-├── REPORT.md                     # Technical report
-├── CODE_ATTRIBUTION.md           # Code sources
+├── README.md                     # Project documentation
 └── LICENSE                       # MIT License
 ```
 
