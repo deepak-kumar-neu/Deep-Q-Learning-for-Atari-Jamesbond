@@ -184,7 +184,7 @@ Training on **2,000 episodes** (~35 minutes on M1 MacBook Pro):
 - Learning rate variations showed minimal impact compared to discount factor
 - All experiments completed 2,000 episodes with consistent training time (~0.6 hours each)
 
-*See [REPORT.md](REPORT.md) for detailed analysis and visualizations*
+*See [docs/REPORT.md](docs/REPORT.md) for detailed analysis and visualizations*
 
 ---
 
@@ -289,8 +289,8 @@ exploration:
 
 ### Main Documents
 
-- **[docs/REPORT.md](REPORT.md)**: Comprehensive technical report with all experiments
-- **[docs/DOCUMENTATION.pdf](DOCUMENTATION.pdf)**
+- **[docs/REPORT.md](docs/REPORT.md)**: Comprehensive technical analysis and experiment results
+- **[docs/Final Report.pdf](docs/Final%20Report.pdf)**: Complete project report with detailed findings
 
 ### Interactive Analysis
 
