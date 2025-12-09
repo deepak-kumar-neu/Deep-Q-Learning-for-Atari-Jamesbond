@@ -8,7 +8,7 @@ environment:
   
 # Training Parameters
 training:
-  total_episodes: 5000  # Reduced for Mac (original: 5000)
+  total_episodes: 2000  # Reduced for Mac (original: 5000)
   max_steps_per_episode: 10000  # Maximum steps per episode
   batch_size: 32  # Minibatch size for training
   memory_size: 50000  # Replay buffer size (reduced for Mac)
